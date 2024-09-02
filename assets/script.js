@@ -16,6 +16,7 @@ button.addEventListener("click", function(){
 // create combo input area, append it to game area when button is clicked
 function maker(){
     let el = document.createElement("input");
+    el.setAttribute("type", "number");
     console.log(el);
     gameArea.appendChild(el);
 }
