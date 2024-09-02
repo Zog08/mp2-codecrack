@@ -34,6 +34,11 @@ for(let i=0; i<4; i++){
     el.order = i;   // -------------------- to create the for loop to make 4 inputs
     el.size = 1;    // -------------------- only single digit numbers allowed
     el.style.width = "50px";
+    el.style.height = "60px";
+    el.style.margin = "2px";
+    el.style.borderRadius = "10px";
+    el.style.textAlign = "right";
+    el.style.borderColor = "blue"
     el.classList.add("numb");
        // -------------------- default value on load as 0
     el.correct = Math.floor(Math.random()*4)
