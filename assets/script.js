@@ -20,10 +20,13 @@ for(let i=0; i<4; i++){
     el.setAttribute("type", "number");
     el.max = 3;     // -------------------- set max value of 3 for each number, EASY level
     el.min = 0;     // -------------------- set min value to 0
-    el.order = i;   // -------------------- to creat the for loop`
+    el.order = i;   // -------------------- to create the for loop to make 4 inputs
     el.size = 1;    // -------------------- only single digit numbers allowed
-    el.style.width = "40px";
-    el.value = 0;   // -------------------- default value on load as 0
+    el.style.width = "50px";
+    el.classList.add("number");
+       // -------------------- default value on load as 0
+    el.correct = Math.floor(Math.random()*4)
+    el.value = el.correct;
     console.log(el);
     gameArea.appendChild(el);
     }
