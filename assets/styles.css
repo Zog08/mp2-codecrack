@@ -31,11 +31,31 @@ main {
     margin: 10px auto;
 }
 
-.guess {
-    display: flex;
+.guess, .check {
+    display: inline-flex;
     justify-content: space-around;
+    
 }
 
 .left-side, .right-side {
     display: flex;
+}
+
+.left-side > div {
+    width: 35px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(125, 125, 125);
+    color: white;
+    border: 1px solid blue;
+    margin: 2px;
+}
+
+.right-side > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(125, 125, 125);
+    margin: 2px;
+    
 }
