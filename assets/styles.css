@@ -66,6 +66,17 @@ button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+    background-color: blue;
+    color: #cccccc;
+    cursor: pointer;
+    border-radius: 12px;
+    border-style: none;
+    width: 75%;
+    transition: 0.5s;
+}
+
+select-numbers:hover {
+    opacity: 0.8;
 }
 
 .generator {

@@ -1,4 +1,5 @@
 Combo generator, helped by Lawrence Svekis, Udemy.com 
+Changed order of the page, put generator and button in the main, upper part of screen, guesses below so the main game play is always at the top of the screen
 
 
 
