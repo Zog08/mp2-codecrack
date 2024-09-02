@@ -15,6 +15,11 @@ button.addEventListener("click", function(){
         for(let x=0; x<numbers.length; x++){
             console.log(numbers[x].value); // ------ console the value guessed
             console.log(numbers[x].correct); // ---- console the correct value
+            if(numbers[x].value == numbers[x].correct){  // -------- do they match, only == as one is a string one is a number
+                console.log("Match");
+            } else{
+                console.log("No Match")
+            }
         }
     }
 })
