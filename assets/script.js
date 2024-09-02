@@ -12,3 +12,10 @@ button.addEventListener("click", function(){
         console.log("checker");
     }
 })
+
+// create combo input area, append it to game area when button is clicked
+function maker(){
+    let el = document.createElement("input");
+    console.log(el);
+    gameArea.appendChild(el);
+}
