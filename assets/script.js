@@ -15,14 +15,16 @@ button.addEventListener("click", function(){
 
 // create combo input area, append it to game area when button is clicked
 function maker(){
+for(let i=0; i<4; i++){
     let el = document.createElement("input");
     el.setAttribute("type", "number");
     el.max = 3;     // -------------------- set max value of 3 for each number, EASY level
     el.min = 0;     // -------------------- set min value to 0
-    el.order = 0;   // --------------------
+    el.order = i;   // -------------------- to creat the for loop`
     el.size = 1;    // -------------------- only single digit numbers allowed
     el.style.width = "40px";
     el.value = 0;   // -------------------- default value on load as 0
     console.log(el);
     gameArea.appendChild(el);
+    }
 }
