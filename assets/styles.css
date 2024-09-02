@@ -1,3 +1,41 @@
+* {
+    margin: 0px;
+    font-family: Verdana, Geneva, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    background-color: rgb(172, 172, 172);
+}
+
 .numb {
     font-size: 2em;
+}
+
+#game {
+    text-align: center;
+    color: blue;
+    border: 5px solid blue;
+    background-color: black;
+    max-width: 400px;
+    margin: 10px auto;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: black;
+    padding: 10px;
+}
+
+main {
+    margin: 10px auto;
+}
+
+.guess {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-side, .right-side {
+    display: flex;
 }
