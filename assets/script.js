@@ -1,5 +1,5 @@
 // Get the game parts and elements and assign them to variables
-const gameArea = document.querySelector(".game");
+const gameGenerator = document.querySelector(".generator");
 const button = document.querySelector("button");
 let gamePlay = false;
     // when game button is clicked for the first time, change the text to reflect game in play
@@ -39,6 +39,6 @@ for(let i=0; i<4; i++){
     el.correct = Math.floor(Math.random()*4)
     el.value = el.correct;
     console.log(el);
-    gameArea.appendChild(el);
+    gameGenerator.appendChild(el);
     }
 }
