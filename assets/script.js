@@ -10,6 +10,12 @@ button.addEventListener("click", function(){
         button.innerHTML = "Check Code Combination"
     }else{
         console.log("checker");
+        const numbers = document.querySelectorAll(".numb");
+        console.log(numbers);
+        for(let x=0; x<numbers.length; x++){
+            console.log(numbers[x].value); // ------ console the value guessed
+            console.log(numbers[x].correct); // ---- console the correct value
+        }
     }
 })
 
@@ -23,7 +29,7 @@ for(let i=0; i<4; i++){
     el.order = i;   // -------------------- to create the for loop to make 4 inputs
     el.size = 1;    // -------------------- only single digit numbers allowed
     el.style.width = "50px";
-    el.classList.add("number");
+    el.classList.add("numb");
        // -------------------- default value on load as 0
     el.correct = Math.floor(Math.random()*4)
     el.value = el.correct;
