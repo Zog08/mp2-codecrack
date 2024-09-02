@@ -17,6 +17,12 @@ button.addEventListener("click", function(){
 function maker(){
     let el = document.createElement("input");
     el.setAttribute("type", "number");
+    el.max = 3;     // -------------------- set max value of 3 for each number, EASY level
+    el.min = 0;     // -------------------- set min value to 0
+    el.order = 0;   // --------------------
+    el.size = 1;    // -------------------- only single digit numbers allowed
+    el.style.width = "40px";
+    el.value = 0;   // -------------------- default value on load as 0
     console.log(el);
     gameArea.appendChild(el);
 }
